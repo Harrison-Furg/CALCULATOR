@@ -3,10 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="header">
+        <div id="logo">
+            Harry Corp
+        </div>
+    </div>
+    <div id="main">
+        <div id="calculator">
+            <div id="display"> 0</div>
+            <div id="buttons">
+                <div class="row">
+                    <button class="button" onclick="seven()">7</button>
+                    <button class="button" onclick="eight()">8</button>
+                    <button class="button" onclick="nine()">9</button>
+                    <button class="button" onclick="times()">x</button>
+                    <button class="button" onclick="off()">C</button>
+                </div>
+                <div class="row">
+                    <button class="button" onclick="four()">4</button>
+                    <button class="button" onclick="five()">5</button>
+                    <button class="button" onclick="six()">6</button>
+                    <button class="button" onclick="minus()">-</button>
+                    <button class="button" onclick="bracket()">()</button>
+                </div>
+                <div class="row">
+                    <button class="button" onclick="one()">1</button>
+                    <button class="button" onclick="two()">2</button>
+                    <button class="button" onclick="three()">3</button>
+                    <button class="button" onclick="plus()">+</button>
+                    <button class="button" onclick="pi()">π</button>
+                </div>
+                <div class="row">
+                    <button class="button" onclick="zero()">0</button>
+                    <button class="button"onclick="point()">.</button>
+                    <button class="button"onclick="dividedBy()">/</button>
+                    <button class="button"onclick="equal()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
